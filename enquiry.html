@@ -1,0 +1,12 @@
+function submitForm(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    alert("Thank you " + name + "! Your enquiry has been submitted.");
+
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+}
